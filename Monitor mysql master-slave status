@@ -1,0 +1,1 @@
+UserParameter=mysql.slave,mysql -uzabbix -p"123456" -h10.3.145.162 -e "show slave status \G;"  2> /dev/null|  grep -E 'Slave_IO_Running: Yes|Slave_SQL_Running: Yes' | grep -c Yes
